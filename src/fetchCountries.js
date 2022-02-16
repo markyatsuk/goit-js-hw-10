@@ -1,20 +1,18 @@
 export { fetchCountries };
 
 
-function fetchParams(){
+
     const params = new URLSearchParams({
-        fields: "name.official, capital, populatio, flags.svg, languages" 
-    })
-    return params;
-}
+        fields: "capital,flags,languages,name,population",
+    });
 
 
 function fetchCountries(name){
-    return fetch(`https://restcountries.com/v3.1/name/${name}?${fetchParams}`)
+    return fetch(`https://restcountries.com/v3.1/name/${name}?${params}`)
     .then(response => {
-        if(!respomce.ok){
+        if(!response.ok){
             throw new Error(response.status);
         }
         return response.json();
-    })
-}
+    });
+};

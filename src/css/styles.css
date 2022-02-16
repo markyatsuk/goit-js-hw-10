@@ -13,8 +13,27 @@ body {
 }
 
 #search-box {
-  font: inherit;
-  padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+  font-weight: 500;
+  height: 50px;
+  font-size: 18px;
+  line-height: 1.17;
+  border-radius: 4px;
+  margin-left: 15px;
+  padding: 0 10px;
+}
+
+.description{
+  font-weight: 700;
+}
+
+p, li{
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+li{
+  list-style-type: none;
+}
+ul{
+  padding-left: 15px;
 }
